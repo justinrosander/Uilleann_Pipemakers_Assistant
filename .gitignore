@@ -13,5 +13,7 @@ __pycache__/
 data/**
 !data/**/
 !data/**/.gitkeep
+!data/**/UP_measurement_template/*.html
+!data/**/UP_measurement_template/*.xlsx
 data/langgraph_checkpoints.sqlite
 data/langgraph_checkpoints.sqlite-*
