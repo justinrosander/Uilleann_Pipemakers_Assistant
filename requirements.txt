@@ -1,0 +1,17 @@
+langgraph>=0.2.0
+langgraph-checkpoint-sqlite>=2.0.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+openai>=1.0.0
+openpyxl>=3.1.0
+odfpy>=1.4.1
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.11.0
+matplotlib>=3.8.0
+python-calamine>=0.9.0
+pypdf>=5.0.0
+psycopg[binary]>=3.2.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+keyring>=25.0.0

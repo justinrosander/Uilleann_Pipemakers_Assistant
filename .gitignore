@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+.DS_Store
+# Measurement files, reports, and checkpoints. Keep the folders.
+data/**
+!data/**/
+!data/**/.gitkeep
+data/langgraph_checkpoints.sqlite
+data/langgraph_checkpoints.sqlite-*

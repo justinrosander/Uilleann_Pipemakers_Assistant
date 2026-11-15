@@ -1,0 +1,13 @@
+Business Problem
+
+Uilleann pipemakers often utilize different standards to document uilleann pipe measurement data, which can often lead to messy spreadsheets, differences in nomenclature, and differences in file formats that store the data.  There are also challenges with visualizing the data to help guide build decisions.  In particular there is the problem of measuring bore data which involved calculating the correct round bore dimensions, as real bores have ovality due to the expansion and contraction of wood over time after the final bore dimensions have been reamed by the maker.  Calculating the difference between the round and oval probe measurements can be time consuming and result in errors.
+
+Project Description
+
+This is an Agentic AI RAG project utilizing LangGraph for the purpose of setting up intake of spreadsheets of bore and tonehole data, verifying validity, sanity checking for expected formatting based on a standardized template provided to the RAG.    File formats may differ, as some may be provided in PDF files, and may be handwritten.  The location of data in excel files may be in an unexpected location, sometimes in the same worksheet.  Upon failure the data will be reviewed by a human to verify validity, contextual issues and errors, which are then sent back to the responding agent to finish validation and sanity checks.  
+
+Hallucination tolerance will be zero.
+
+Upon success of validation, the data will be organized in a PostgreSQL database organized appropriately in respective tables, validated by human before and after commits.
+
+Separate agents should be set up respectively for: EDA visualization projects, ML linear/non-linear regressions to analyze bore data, DL experiments to train and predict optimized tonehole placement and dimensions.  These agents can be called upon request of the human operator and should not be assumed to automatically start.
